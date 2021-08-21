@@ -199,7 +199,7 @@
 			<div class="flex items-center justify-start">
 				<img
 					on:click={handleCancelWorkout}
-					src="../static/arrow.svg"
+					src=" /arrow.svg"
 					alt="go back arrow"
 					class="w-5"
 				/>

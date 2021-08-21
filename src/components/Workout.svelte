@@ -31,15 +31,10 @@
 		<div
 			class="bg-green-transparent flex  rounded w-auto px-2 py-2 items-center justify-around"
 		>
-			<img class="w-3.5 mr-1" src="../static/stopwatch.svg" alt="stopwatch" />
+			<img class="w-3.5 mr-1" src=" /stopwatch.svg" alt="stopwatch" />
 			<p class="text-green-500 text-xs ">{time}</p>
 		</div>
-		<img
-			src="../static/three-dots.svg"
-			alt="Three dots options"
-			class="w-4 ml-2"
-			on:click
-		/>
+		<img src=" /three-dots.svg" alt="Three dots options" class="w-4 ml-2" on:click />
 	</div>
 </div>
 

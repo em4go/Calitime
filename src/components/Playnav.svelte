@@ -4,9 +4,7 @@
 	const dispatch = createEventDispatcher();
 
 	export let timeRunning = false;
-	$: playButton = !timeRunning
-		? '../static/play-button.svg'
-		: '../static/pause-button.svg';
+	$: playButton = !timeRunning ? ' /play-button.svg' : ' /pause-button.svg';
 
 	function handlePlayPause() {
 		dispatch('playPause');
@@ -21,7 +19,7 @@
 
 <div class="w-full flex items center justify-around pt-5 fixed bottom-0 pb-5">
 	<img
-		src="../static/next-arrow.svg"
+		src=" /next-arrow.svg"
 		alt="Next exercise button"
 		class="w-6 cursor-pointer transform rotate-180"
 		on:click={handlePrevious}
@@ -33,7 +31,7 @@
 		on:click={handlePlayPause}
 	/>
 	<img
-		src="../static/next-arrow.svg"
+		src=" /next-arrow.svg"
 		alt="Next exercise button"
 		class="w-6 cursor-pointer"
 		on:click={handleNext}

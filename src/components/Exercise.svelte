@@ -48,7 +48,7 @@
 	</div>
 	<p class="text-gray-300">{time}</p>
 	<div class="w-6 ml-4 opacity-75">
-		<img src="../static/vertical-move-white.svg" alt="" />
+		<img src=" /vertical-move-white.svg" alt="" />
 	</div>
 </div>
 

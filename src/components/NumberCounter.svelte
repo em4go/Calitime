@@ -13,7 +13,7 @@
 
 <div class="w-full flex flex-col items-center ">
 	<div class="flex items-center">
-		<img src="../static/minus.svg" alt="Minus sign" class="w-5" on:click={handleMinus} />
+		<img src=" /minus.svg" alt="Minus sign" class="w-5" on:click={handleMinus} />
 		<p class="text-3xl font-semibold mx-5">
 			x<input
 				type="text"
@@ -21,6 +21,6 @@
 				class="w-10 ml-1 border-b border-gray-400 outline-none bg-transparent text-center font-semibold text-3xl"
 			/>
 		</p>
-		<img src="../static/add.svg" alt="Add sign" class="w-5" on:click={handleAdd} />
+		<img src=" /add.svg" alt="Add sign" class="w-5" on:click={handleAdd} />
 	</div>
 </div>

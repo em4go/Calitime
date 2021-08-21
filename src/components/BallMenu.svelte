@@ -22,7 +22,7 @@
 			class="w-5 transition duration-100 ease-in-out"
 			class:rotate-45={isOpen}
 			alt="Add menu"
-			src="../static/add.svg"
+			src=" /add.svg"
 		/>
 	</div>
 	{#if isOpen}
@@ -31,7 +31,7 @@
 			<div
 				class="w-11 h-11 ml-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "
 			>
-				<img class="w-10" alt="Add menu" src="../static/favicon.svg" />
+				<img class="w-10" alt="Add menu" src=" /favicon.svg" />
 			</div>
 		</div>
 	{/if}

@@ -23,6 +23,6 @@
 		: ''}"
 	on:click
 >
-	<img class={props.width} src="../static/{props.image}.svg" alt="moon icon" />
+	<img class={props.width} src=" /{props.image}.svg" alt="moon icon" />
 	<p class="text-xs">{props.text}</p>
 </div>

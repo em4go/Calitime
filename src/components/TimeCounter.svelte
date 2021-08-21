@@ -49,19 +49,14 @@
 <div class="w-full flex flex-col items-center ">
 	<div class="flex items-center">
 		<div class="flex flex-col items-center">
-			<img
-				src="../static/up-arrow.svg"
-				alt="Up arrow"
-				class="w-5"
-				on:click={handleAddMinutes}
-			/>
+			<img src=" /up-arrow.svg" alt="Up arrow" class="w-5" on:click={handleAddMinutes} />
 			<input
 				type="text"
 				bind:value={minutesText}
 				class="w-10 outline-none bg-transparent text-center font-semibold text-3xl"
 			/>
 			<img
-				src="../static/down-arrow.svg"
+				src=" /down-arrow.svg"
 				alt="Down arrow"
 				class="w-5"
 				on:click={handleMinusMinutes}
@@ -70,7 +65,7 @@
 		<p class="text-3xl w-auto">:</p>
 		<div class="flex flex-col items-center">
 			<img
-				src="../static/up-arrow.svg"
+				src=" /up-arrow.svg"
 				alt="Up arrow"
 				class="w-5 select-none"
 				on:click={handleAddSeconds}
@@ -81,7 +76,7 @@
 				class="w-10 outline-none bg-transparent text-center font-semibold text-3xl"
 			/>
 			<img
-				src="../static/down-arrow.svg"
+				src=" /down-arrow.svg"
 				alt="Down arrow"
 				class="w-5 select-none"
 				on:click={handleMinusSeconds}

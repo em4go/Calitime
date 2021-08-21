@@ -53,7 +53,7 @@
 		<p class="text-md">My Workouts</p>
 		<!-- 		<div class="flex items-center">
 			<p class="text-md mr-2">Sort by</p>
-			<img class="w-5" src="../static/sort-down.svg" alt="Sort by icon" />
+			<img class="w-5" src=" /sort-down.svg" alt="Sort by icon" />
 		</div> -->
 	</div>
 	<div class="w-full px-5">

@@ -2411,9 +2411,9 @@ function init(settings2 = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-7118ab3a.js",
+      file: "/./_app/start-5379e26a.js",
       css: ["/./_app/assets/start-8077b9bf.css"],
-      js: ["/./_app/start-7118ab3a.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/singletons-12a22614.js"]
+      js: ["/./_app/start-5379e26a.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/singletons-12a22614.js"]
     },
     fetched: void 0,
     floc: false,
@@ -2505,7 +2505,7 @@ var module_lookup = {
     return _id_;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-f92c75f8.js", "css": ["/./_app/assets/pages/__layout.svelte-2e9a4198.css"], "js": ["/./_app/pages/__layout.svelte-f92c75f8.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-eb914159.js", "css": [], "js": ["/./_app/error.svelte-eb914159.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-b826255e.js", "css": ["/./_app/assets/pages/index.svelte-c7508dcd.css"], "js": ["/./_app/pages/index.svelte-b826255e.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7938e75c.js", "/./_app/chunks/navigation-4b586f8b.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/workoutSettings/[id].svelte": { "entry": "/./_app/pages/workoutSettings/[id].svelte-b1e981a5.js", "css": ["/./_app/assets/pages/workoutSettings/[id].svelte-8963ed56.css"], "js": ["/./_app/pages/workoutSettings/[id].svelte-b1e981a5.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/navigation-4b586f8b.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/settings.svelte": { "entry": "/./_app/pages/settings.svelte-fb2a10ec.js", "css": [], "js": ["/./_app/pages/settings.svelte-fb2a10ec.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7938e75c.js"], "styles": [] }, "src/routes/workout/[id].svelte": { "entry": "/./_app/pages/workout/[id].svelte-72e0b324.js", "css": ["/./_app/assets/pages/workout/[id].svelte-24ddd8b1.css"], "js": ["/./_app/pages/workout/[id].svelte-72e0b324.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-f92c75f8.js", "css": ["/./_app/assets/pages/__layout.svelte-2e9a4198.css"], "js": ["/./_app/pages/__layout.svelte-f92c75f8.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-eb914159.js", "css": [], "js": ["/./_app/error.svelte-eb914159.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-c45b2869.js", "css": ["/./_app/assets/pages/index.svelte-c7508dcd.css"], "js": ["/./_app/pages/index.svelte-c45b2869.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js", "/./_app/chunks/navigation-3b122c4a.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/workoutSettings/[id].svelte": { "entry": "/./_app/pages/workoutSettings/[id].svelte-75517b1f.js", "css": ["/./_app/assets/pages/workoutSettings/[id].svelte-8963ed56.css"], "js": ["/./_app/pages/workoutSettings/[id].svelte-75517b1f.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/navigation-3b122c4a.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/settings.svelte": { "entry": "/./_app/pages/settings.svelte-9c891486.js", "css": [], "js": ["/./_app/pages/settings.svelte-9c891486.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js"], "styles": [] }, "src/routes/workout/[id].svelte": { "entry": "/./_app/pages/workout/[id].svelte-b0045303.js", "css": ["/./_app/assets/pages/workout/[id].svelte-24ddd8b1.css"], "js": ["/./_app/pages/workout/[id].svelte-b0045303.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js"], "styles": [] } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -2559,7 +2559,7 @@ var error2 = /* @__PURE__ */ Object.freeze({
 });
 var css$2 = {
   code: ".bg-green-transparent.svelte-q12jd4{background-color:rgba(29, 201, 132, 0.3)}",
-  map: '{"version":3,"file":"Workout.svelte","sources":["Workout.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { createEventDispatcher } from \'svelte\';\\nconst dispatch = createEventDispatcher();\\nexport let props;\\nlet time = translateTime(props.duration);\\n/* \\tfunction calculateTime(time: number): string {\\n    if (time < 10) {\\n        return `0${time}`;\\n    }\\n    return `${time}`;\\n} */\\nfunction translateTime(time) {\\n    let hours = Math.floor(time / 3600);\\n    let minutes = Math.floor((time - Number(hours) * 3600) / 60);\\n    if (hours === 0)\\n        return `${minutes}min`;\\n    if (minutes === 0)\\n        return `${hours}h`;\\n    return `${hours}h ${minutes}min`;\\n}\\nfunction handleLongPress() {\\n    dispatch(\'longPress\');\\n}\\n<\/script>\\n\\n<div\\n\\tclass=\\"w-full flex justify-between bg-bgBluelight rounded p-3 mb-5\\"\\n\\ton:contextmenu|preventDefault={handleLongPress}\\n>\\n\\t<p class=\\"text-md font-medium translate-y-1\\">{props.name}</p>\\n\\t<div class=\\"flex items-center justify-around\\">\\n\\t\\t<div\\n\\t\\t\\tclass=\\"bg-green-transparent flex  rounded w-auto px-2 py-2 items-center justify-around\\"\\n\\t\\t>\\n\\t\\t\\t<img class=\\"w-3.5 mr-1\\" src=\\"../static/stopwatch.svg\\" alt=\\"stopwatch\\" />\\n\\t\\t\\t<p class=\\"text-green-500 text-xs \\">{time}</p>\\n\\t\\t</div>\\n\\t\\t<img\\n\\t\\t\\tsrc=\\"../static/three-dots.svg\\"\\n\\t\\t\\talt=\\"Three dots options\\"\\n\\t\\t\\tclass=\\"w-4 ml-2\\"\\n\\t\\t\\ton:click\\n\\t\\t/>\\n\\t</div>\\n</div>\\n\\n<style>\\n\\t.bg-green-transparent {\\n\\t\\tbackground-color: rgba(29, 201, 132, 0.3);\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AA8CC,qBAAqB,cAAC,CAAC,AACtB,gBAAgB,CAAE,KAAK,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,AAC1C,CAAC"}'
+  map: '{"version":3,"file":"Workout.svelte","sources":["Workout.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { createEventDispatcher } from \'svelte\';\\nconst dispatch = createEventDispatcher();\\nexport let props;\\nlet time = translateTime(props.duration);\\n/* \\tfunction calculateTime(time: number): string {\\n    if (time < 10) {\\n        return `0${time}`;\\n    }\\n    return `${time}`;\\n} */\\nfunction translateTime(time) {\\n    let hours = Math.floor(time / 3600);\\n    let minutes = Math.floor((time - Number(hours) * 3600) / 60);\\n    if (hours === 0)\\n        return `${minutes}min`;\\n    if (minutes === 0)\\n        return `${hours}h`;\\n    return `${hours}h ${minutes}min`;\\n}\\nfunction handleLongPress() {\\n    dispatch(\'longPress\');\\n}\\n<\/script>\\n\\n<div\\n\\tclass=\\"w-full flex justify-between bg-bgBluelight rounded p-3 mb-5\\"\\n\\ton:contextmenu|preventDefault={handleLongPress}\\n>\\n\\t<p class=\\"text-md font-medium translate-y-1\\">{props.name}</p>\\n\\t<div class=\\"flex items-center justify-around\\">\\n\\t\\t<div\\n\\t\\t\\tclass=\\"bg-green-transparent flex  rounded w-auto px-2 py-2 items-center justify-around\\"\\n\\t\\t>\\n\\t\\t\\t<img class=\\"w-3.5 mr-1\\" src=\\" /stopwatch.svg\\" alt=\\"stopwatch\\" />\\n\\t\\t\\t<p class=\\"text-green-500 text-xs \\">{time}</p>\\n\\t\\t</div>\\n\\t\\t<img src=\\" /three-dots.svg\\" alt=\\"Three dots options\\" class=\\"w-4 ml-2\\" on:click />\\n\\t</div>\\n</div>\\n\\n<style>\\n\\t.bg-green-transparent {\\n\\t\\tbackground-color: rgba(29, 201, 132, 0.3);\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAyCC,qBAAqB,cAAC,CAAC,AACtB,gBAAgB,CAAE,KAAK,EAAE,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,AAC1C,CAAC"}'
 };
 function translateTime$2(time) {
   let hours = Math.floor(time / 3600);
@@ -2578,21 +2578,21 @@ var Workout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props(props);
   $$result.css.add(css$2);
   return `<div class="${"w-full flex justify-between bg-bgBluelight rounded p-3 mb-5"}"><p class="${"text-md font-medium translate-y-1"}">${escape2(props.name)}</p>
-	<div class="${"flex items-center justify-around"}"><div class="${"bg-green-transparent flex  rounded w-auto px-2 py-2 items-center justify-around svelte-q12jd4"}"><img class="${"w-3.5 mr-1"}" src="${"../static/stopwatch.svg"}" alt="${"stopwatch"}">
+	<div class="${"flex items-center justify-around"}"><div class="${"bg-green-transparent flex  rounded w-auto px-2 py-2 items-center justify-around svelte-q12jd4"}"><img class="${"w-3.5 mr-1"}" src="${" /stopwatch.svg"}" alt="${"stopwatch"}">
 			<p class="${"text-green-500 text-xs "}">${escape2(time)}</p></div>
-		<img src="${"../static/three-dots.svg"}" alt="${"Three dots options"}" class="${"w-4 ml-2"}"></div>
+		<img src="${" /three-dots.svg"}" alt="${"Three dots options"}" class="${"w-4 ml-2"}"></div>
 </div>`;
 });
 var SettingsBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { settings: settings2 = false } = $$props;
   if ($$props.settings === void 0 && $$bindings.settings && settings2 !== void 0)
     $$bindings.settings(settings2);
-  return `<div class="${"w-full h-11 bg-bgBluedark flex items-center justify-around"}"><a href="${"/"}"><img src="${"../static/home.svg"}" alt="${"Home button"}"${add_attribute("class", settings2 === true ? "w-5 opacity-75" : "w-6", 0)}></a>
-	<a href="${"/settings"}"><img src="${"../static/settings.svg"}" alt="${"Settings button"}"${add_attribute("class", settings2 === false ? "w-5 opacity-75" : "w-7", 0)}></a></div>`;
+  return `<div class="${"w-full h-11 bg-bgBluedark flex items-center justify-around"}"><a href="${"/"}"><img src="${" /home.svg"}" alt="${"Home button"}"${add_attribute("class", settings2 === true ? "w-5 opacity-75" : "w-6", 0)}></a>
+	<a href="${"/settings"}"><img src="${" /settings.svg"}" alt="${"Settings button"}"${add_attribute("class", settings2 === false ? "w-5 opacity-75" : "w-7", 0)}></a></div>`;
 });
 var BallMenu = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   createEventDispatcher();
-  return `<div class="${" fixed bottom-14 right-8 flex flex-col-reverse items-end"}"><div class="${"w-11 h-11 mt-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "}"><img class="${["w-5 transition duration-100 ease-in-out", ""].join(" ").trim()}" alt="${"Add menu"}" src="${"../static/add.svg"}"></div>
+  return `<div class="${" fixed bottom-14 right-8 flex flex-col-reverse items-end"}"><div class="${"w-11 h-11 mt-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "}"><img class="${["w-5 transition duration-100 ease-in-out", ""].join(" ").trim()}" alt="${"Add menu"}" src="${" /add.svg"}"></div>
 	${``}</div>`;
 });
 var Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -2633,7 +2633,7 @@ var Colors;
 })(Colors || (Colors = {}));
 var css$1 = {
   code: ".group.svelte-1qvf1cu{background-color:var(--bgColor)}.circle.svelte-1qvf1cu{background-color:var(--bgColor)}",
-  map: '{"version":3,"file":"Exercise.svelte","sources":["Exercise.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { colorsArray } from \'../colors\';\\nimport { createEventDispatcher } from \'svelte\';\\nconst dispatch = createEventDispatcher();\\nexport let props = {\\n    name: \'Untitled\',\\n    color: 6,\\n    isRest: false,\\n    repsMode: false,\\n    reps: 5,\\n    time: 20\\n};\\nexport let isGroup = false;\\n$: bgColor = colorsArray[props.color];\\nfunction calculateTime(time) {\\n    if (time < 10) {\\n        return `0${time}`;\\n    }\\n    return `${time}`;\\n}\\nfunction translateTime(time) {\\n    let minutes = calculateTime(Math.floor(time / 60));\\n    let seconds = calculateTime(time % 60);\\n    return `${minutes}:${seconds}`;\\n}\\n$: time = translateTime(props.time);\\nfunction handleLongPress() {\\n    dispatch(\'longPress\');\\n}\\n<\/script>\\n\\n<div\\n\\tclass=\\"w-full h-12 px-4 flex flex-row items-center rounded \\"\\n\\tclass:group={isGroup}\\n\\tstyle=\\"--bgColor: {bgColor}\\"\\n\\ton:contextmenu|preventDefault={handleLongPress}\\n>\\n\\t<div class=\\"w-full flex items-center\\">\\n\\t\\t<div>\\n\\t\\t\\t{#if !isGroup}\\n\\t\\t\\t\\t<div class=\\"circle w-8 h-8 rounded-full mr-4\\" style=\\"--bgColor: {bgColor}\\" />\\n\\t\\t\\t{/if}\\n\\t\\t</div>\\n\\t\\t<p class=\\"text-md\\">{props.name}</p>\\n\\t</div>\\n\\t<p class=\\"text-gray-300\\">{time}</p>\\n\\t<div class=\\"w-6 ml-4 opacity-75\\">\\n\\t\\t<img src=\\"../static/vertical-move-white.svg\\" alt=\\"\\" />\\n\\t</div>\\n</div>\\n\\n<style>\\n\\t.group {\\n\\t\\tbackground-color: var(--bgColor);\\n\\t}\\n\\t.circle {\\n\\t\\tbackground-color: var(--bgColor);\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAmDC,MAAM,eAAC,CAAC,AACP,gBAAgB,CAAE,IAAI,SAAS,CAAC,AACjC,CAAC,AACD,OAAO,eAAC,CAAC,AACR,gBAAgB,CAAE,IAAI,SAAS,CAAC,AACjC,CAAC"}'
+  map: '{"version":3,"file":"Exercise.svelte","sources":["Exercise.svelte"],"sourcesContent":["<script lang=\\"ts\\">import { colorsArray } from \'../colors\';\\nimport { createEventDispatcher } from \'svelte\';\\nconst dispatch = createEventDispatcher();\\nexport let props = {\\n    name: \'Untitled\',\\n    color: 6,\\n    isRest: false,\\n    repsMode: false,\\n    reps: 5,\\n    time: 20\\n};\\nexport let isGroup = false;\\n$: bgColor = colorsArray[props.color];\\nfunction calculateTime(time) {\\n    if (time < 10) {\\n        return `0${time}`;\\n    }\\n    return `${time}`;\\n}\\nfunction translateTime(time) {\\n    let minutes = calculateTime(Math.floor(time / 60));\\n    let seconds = calculateTime(time % 60);\\n    return `${minutes}:${seconds}`;\\n}\\n$: time = translateTime(props.time);\\nfunction handleLongPress() {\\n    dispatch(\'longPress\');\\n}\\n<\/script>\\n\\n<div\\n\\tclass=\\"w-full h-12 px-4 flex flex-row items-center rounded \\"\\n\\tclass:group={isGroup}\\n\\tstyle=\\"--bgColor: {bgColor}\\"\\n\\ton:contextmenu|preventDefault={handleLongPress}\\n>\\n\\t<div class=\\"w-full flex items-center\\">\\n\\t\\t<div>\\n\\t\\t\\t{#if !isGroup}\\n\\t\\t\\t\\t<div class=\\"circle w-8 h-8 rounded-full mr-4\\" style=\\"--bgColor: {bgColor}\\" />\\n\\t\\t\\t{/if}\\n\\t\\t</div>\\n\\t\\t<p class=\\"text-md\\">{props.name}</p>\\n\\t</div>\\n\\t<p class=\\"text-gray-300\\">{time}</p>\\n\\t<div class=\\"w-6 ml-4 opacity-75\\">\\n\\t\\t<img src=\\" /vertical-move-white.svg\\" alt=\\"\\" />\\n\\t</div>\\n</div>\\n\\n<style>\\n\\t.group {\\n\\t\\tbackground-color: var(--bgColor);\\n\\t}\\n\\t.circle {\\n\\t\\tbackground-color: var(--bgColor);\\n\\t}\\n</style>\\n"],"names":[],"mappings":"AAmDC,MAAM,eAAC,CAAC,AACP,gBAAgB,CAAE,IAAI,SAAS,CAAC,AACjC,CAAC,AACD,OAAO,eAAC,CAAC,AACR,gBAAgB,CAAE,IAAI,SAAS,CAAC,AACjC,CAAC"}'
 };
 var Exercise = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let bgColor;
@@ -2672,16 +2672,16 @@ var Exercise = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ].join(" ").trim()}" style="${"--bgColor: " + escape2(bgColor)}"><div class="${"w-full flex items-center"}"><div>${!isGroup ? `<div class="${"circle w-8 h-8 rounded-full mr-4 svelte-1qvf1cu"}" style="${"--bgColor: " + escape2(bgColor)}"></div>` : ``}</div>
 		<p class="${"text-md"}">${escape2(props.name)}</p></div>
 	<p class="${"text-gray-300"}">${escape2(time)}</p>
-	<div class="${"w-6 ml-4 opacity-75"}"><img src="${"../static/vertical-move-white.svg"}" alt="${""}"></div>
+	<div class="${"w-6 ml-4 opacity-75"}"><img src="${" /vertical-move-white.svg"}" alt="${""}"></div>
 </div>`;
 });
 var NumberCounter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { counter = 3 } = $$props;
   if ($$props.counter === void 0 && $$bindings.counter && counter !== void 0)
     $$bindings.counter(counter);
-  return `<div class="${"w-full flex flex-col items-center "}"><div class="${"flex items-center"}"><img src="${"../static/minus.svg"}" alt="${"Minus sign"}" class="${"w-5"}">
+  return `<div class="${"w-full flex flex-col items-center "}"><div class="${"flex items-center"}"><img src="${" /minus.svg"}" alt="${"Minus sign"}" class="${"w-5"}">
 		<p class="${"text-3xl font-semibold mx-5"}">x<input type="${"text"}" class="${"w-10 ml-1 border-b border-gray-400 outline-none bg-transparent text-center font-semibold text-3xl"}"${add_attribute("value", counter, 0)}></p>
-		<img src="${"../static/add.svg"}" alt="${"Add sign"}" class="${"w-5"}"></div></div>`;
+		<img src="${" /add.svg"}" alt="${"Add sign"}" class="${"w-5"}"></div></div>`;
 });
 function overrideItemIdKeyNameBeforeInitialisingDndZones(newKeyName) {
   if (typeof newKeyName !== "string") {
@@ -2795,7 +2795,7 @@ var U5Bidu5D$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     $$settled = true;
     workoutDuration = workoutLaps * workoutDurationOneLap;
     workoutTime = translateTime$1(workoutDuration);
-    $$rendered = `<div class="${"flex flex-col text-gray-200 w-full min-h-screen mx-auto items-center"}"><div class="${"w-full mt-3 px-3 flex flex-col "}"><div class="${"w-full grid grid-cols-2"}"><div class="${"flex items-center justify-start"}"><img src="${"../static/arrow.svg"}" alt="${"go back arrow"}" class="${"w-5"}"></div>
+    $$rendered = `<div class="${"flex flex-col text-gray-200 w-full min-h-screen mx-auto items-center"}"><div class="${"w-full mt-3 px-3 flex flex-col "}"><div class="${"w-full grid grid-cols-2"}"><div class="${"flex items-center justify-start"}"><img src="${" /arrow.svg"}" alt="${"go back arrow"}" class="${"w-5"}"></div>
 			<div class="${"flex justify-end items-center"}"><p class="${"text-sm uppercase"}">save</p></div></div>
 		<div class="${"w-full flex items-center justify-center py-2"}"><input type="${"text"}" placeholder="${"Workout Title"}" class="${"border-b border-red-500 outline-none bg-transparent text-center font-semibold"}"${add_attribute("value", workoutName, 0)}></div></div>
 	<div class="${"w-full flex items-center justify-center flex-col my-4"}"><p class="${"text-xs uppercase text-gray-400"}">duration</p>
@@ -2888,7 +2888,7 @@ var ThemeButton = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     $$bindings.isDark(isDark);
   if ($$props.isDisabled === void 0 && $$bindings.isDisabled && isDisabled !== void 0)
     $$bindings.isDisabled(isDisabled);
-  return `<div class="${"w-16 h-16 p-2 rounded-lg flex flex-col items-center justify-around " + escape2(props.color) + " " + escape2(isDisabled ? "filter grayscale bg-orange" : "")}"><img${add_attribute("class", props.width, 0)} src="${"../static/" + escape2(props.image) + ".svg"}" alt="${"moon icon"}">
+  return `<div class="${"w-16 h-16 p-2 rounded-lg flex flex-col items-center justify-around " + escape2(props.color) + " " + escape2(isDisabled ? "filter grayscale bg-orange" : "")}"><img${add_attribute("class", props.width, 0)} src="${" /" + escape2(props.image) + ".svg"}" alt="${"moon icon"}">
 	<p class="${"text-xs"}">${escape2(props.text)}</p></div>`;
 });
 var ThemeSettings = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -2971,10 +2971,10 @@ var Playnav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { timeRunning = false } = $$props;
   if ($$props.timeRunning === void 0 && $$bindings.timeRunning && timeRunning !== void 0)
     $$bindings.timeRunning(timeRunning);
-  playButton = !timeRunning ? "../static/play-button.svg" : "../static/pause-button.svg";
-  return `<div class="${"w-full flex items center justify-around pt-5 fixed bottom-0 pb-5"}"><img src="${"../static/next-arrow.svg"}" alt="${"Next exercise button"}" class="${"w-6 cursor-pointer transform rotate-180"}">
+  playButton = !timeRunning ? " /play-button.svg" : " /pause-button.svg";
+  return `<div class="${"w-full flex items center justify-around pt-5 fixed bottom-0 pb-5"}"><img src="${" /next-arrow.svg"}" alt="${"Next exercise button"}" class="${"w-6 cursor-pointer transform rotate-180"}">
 	<img${add_attribute("src", playButton, 0)} alt="${"Play Button"}" class="${"w-10 cursor-pointer active:scale-90"}">
-	<img src="${"../static/next-arrow.svg"}" alt="${"Next exercise button"}" class="${"w-6 cursor-pointer"}"></div>`;
+	<img src="${" /next-arrow.svg"}" alt="${"Next exercise button"}" class="${"w-6 cursor-pointer"}"></div>`;
 });
 var StatsText = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { props } = $$props;
