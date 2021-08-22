@@ -19,14 +19,6 @@
 	async function updateSettings() {
 		db = new PouchDB('settings');
 		const allDocs = await db.allDocs({ include_docs: true });
-		if (allDocs.rows[0] === undefined) {
-			await db.put({
-				_id: 'ajustes',
-				darkTheme: true,
-				voicePitch: 1,
-				voiceRate: 1
-			});
-		}
 		settings = allDocs.rows[0].doc;
 	}
 

@@ -17,6 +17,9 @@
 	import { onMount } from 'svelte';
 	import WorkoutPreparation from '../../components/WorkoutPreparation.svelte';
 	import { createSpeech, speak } from '../../tts';
+	import TopNavbar from '../../components/TopNavbar.svelte';
+	import ExitModal from '../../components/ExitModal.svelte';
+	import { goto } from '$app/navigation';
 
 	export let id;
 	let speech;
@@ -30,7 +33,7 @@
 		console.log(speech);
 		speak(speech, 'Prepárate');
 	});
-	async function loadWorkout(id: string) {
+	async function loadWorkout(id) {
 		let db = new PouchDB('workouts');
 		let allDocs = await db.find({
 			selector: {
@@ -63,7 +66,7 @@
 		exercises = allDocs.docs;
 	}
 
-	let preparationTrue = true;
+	let preparationTrue = false;
 	let totalTime = 10;
 	let actualLap = 1;
 	let totalLaps;
@@ -188,7 +191,7 @@
 			actualLap++;
 		}
 		updateStats();
-		speak(speech, nextExerciseText);
+		speak(speech, currentExercise.name);
 		startTimer();
 	}
 	function isFirstExercise() {
@@ -235,12 +238,39 @@
 		speak(speech, 'Empecemos');
 		handleTimer();
 	}
+	let showExitModal = false;
+	function handleBack() {
+		if (timeRunning) {
+			showExitModal = true;
+		} else {
+			handleExit();
+		}
+		stopTimer();
+	}
+	function handleExit() {
+		goto('/');
+	}
+	function handleStay() {
+		showExitModal = false;
+		startTimer();
+	}
+	let timeToAdd = 10;
+	function addBreakTime() {
+		totalTime += timeToAdd;
+		currentExercise.time += timeToAdd;
+		updateStats();
+	}
+	function minusBreakTime() {
+		totalTime -= timeToAdd;
+		currentExercise.time -= timeToAdd;
+		updateStats();
+	}
 </script>
 
-<svelte:head>
-	<title>Timer</title>
-</svelte:head>
 <div class="flex flex-col items-center text-gray-200 w-full min-h-screen mx-auto">
+	<div class="my-3 w-full px-3">
+		<TopNavbar on:back={handleBack} />
+	</div>
 	<div class="w-full grid grid-cols-3 px-2 py-2 mx-auto">
 		<StatsText
 			props={{
@@ -273,8 +303,6 @@
 			on:click={handleTimer}
 		/>
 	</div>
-
-	<button on:click={handleWorkoutReset}>reset</button>
 	<Playnav
 		on:playPause={handleStartStop}
 		on:next={handleNextExercise}
@@ -286,5 +314,8 @@
 	{/if}
 	{#if preparationTrue}
 		<WorkoutPreparation on:preparationEnd={handlePreparationEnd} />
+	{/if}
+	{#if showExitModal}
+		<ExitModal on:agree={handleExit} on:deny={handleStay} />
 	{/if}
 </div>

@@ -2411,9 +2411,9 @@ function init(settings2 = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-5379e26a.js",
+      file: "/./_app/start-bbe33e14.js",
       css: ["/./_app/assets/start-8077b9bf.css"],
-      js: ["/./_app/start-5379e26a.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/singletons-12a22614.js"]
+      js: ["/./_app/start-bbe33e14.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/singletons-12a22614.js"]
     },
     fetched: void 0,
     floc: false,
@@ -2446,7 +2446,7 @@ function init(settings2 = default_settings) {
 var d = decodeURIComponent;
 var empty = () => ({});
 var manifest = {
-  assets: [{ "file": "GoogleLogo.svg", "size": 1307, "type": "image/svg+xml" }, { "file": "add.svg", "size": 1279, "type": "image/svg+xml" }, { "file": "arrow.svg", "size": 1697, "type": "image/svg+xml" }, { "file": "down-arrow.svg", "size": 1548, "type": "image/svg+xml" }, { "file": "favicon.svg", "size": 2033, "type": "image/svg+xml" }, { "file": "home.svg", "size": 1124, "type": "image/svg+xml" }, { "file": "minus.svg", "size": 1174, "type": "image/svg+xml" }, { "file": "moon.svg", "size": 839, "type": "image/svg+xml" }, { "file": "next-arrow.svg", "size": 1921, "type": "image/svg+xml" }, { "file": "pause-button.svg", "size": 941, "type": "image/svg+xml" }, { "file": "play-button.svg", "size": 960, "type": "image/svg+xml" }, { "file": "settings.svg", "size": 1030, "type": "image/svg+xml" }, { "file": "sort-down.svg", "size": 2092, "type": "image/svg+xml" }, { "file": "stopwatch.svg", "size": 1153, "type": "image/svg+xml" }, { "file": "sun.svg", "size": 4393, "type": "image/svg+xml" }, { "file": "three-dots.svg", "size": 853, "type": "image/svg+xml" }, { "file": "up-arrow.svg", "size": 1538, "type": "image/svg+xml" }, { "file": "vertical-move-white.svg", "size": 1029, "type": "image/svg+xml" }],
+  assets: [{ "file": "GoogleLogo.svg", "size": 1307, "type": "image/svg+xml" }, { "file": "add-time.svg", "size": 5945, "type": "image/svg+xml" }, { "file": "add.svg", "size": 1279, "type": "image/svg+xml" }, { "file": "arrow.svg", "size": 1697, "type": "image/svg+xml" }, { "file": "down-arrow.svg", "size": 1548, "type": "image/svg+xml" }, { "file": "favicon.svg", "size": 2033, "type": "image/svg+xml" }, { "file": "home.svg", "size": 1124, "type": "image/svg+xml" }, { "file": "minus-time.svg", "size": 5173, "type": "image/svg+xml" }, { "file": "minus.svg", "size": 1174, "type": "image/svg+xml" }, { "file": "moon.svg", "size": 839, "type": "image/svg+xml" }, { "file": "next-arrow.svg", "size": 1921, "type": "image/svg+xml" }, { "file": "pause-button.svg", "size": 941, "type": "image/svg+xml" }, { "file": "play-button.svg", "size": 960, "type": "image/svg+xml" }, { "file": "settings.svg", "size": 1030, "type": "image/svg+xml" }, { "file": "sort-down.svg", "size": 2092, "type": "image/svg+xml" }, { "file": "stopwatch.svg", "size": 1153, "type": "image/svg+xml" }, { "file": "sun.svg", "size": 4393, "type": "image/svg+xml" }, { "file": "three-dots.svg", "size": 853, "type": "image/svg+xml" }, { "file": "up-arrow.svg", "size": 1538, "type": "image/svg+xml" }, { "file": "vertical-move-white.svg", "size": 1029, "type": "image/svg+xml" }, { "file": "water-bottle.svg", "size": 4614, "type": "image/svg+xml" }],
   layout: "src/routes/__layout.svelte",
   error: ".svelte-kit/build/components/error.svelte",
   routes: [
@@ -2505,7 +2505,7 @@ var module_lookup = {
     return _id_;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-f92c75f8.js", "css": ["/./_app/assets/pages/__layout.svelte-2e9a4198.css"], "js": ["/./_app/pages/__layout.svelte-f92c75f8.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-eb914159.js", "css": [], "js": ["/./_app/error.svelte-eb914159.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-c45b2869.js", "css": ["/./_app/assets/pages/index.svelte-c7508dcd.css"], "js": ["/./_app/pages/index.svelte-c45b2869.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js", "/./_app/chunks/navigation-3b122c4a.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/workoutSettings/[id].svelte": { "entry": "/./_app/pages/workoutSettings/[id].svelte-75517b1f.js", "css": ["/./_app/assets/pages/workoutSettings/[id].svelte-8963ed56.css"], "js": ["/./_app/pages/workoutSettings/[id].svelte-75517b1f.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/navigation-3b122c4a.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/settings.svelte": { "entry": "/./_app/pages/settings.svelte-9c891486.js", "css": [], "js": ["/./_app/pages/settings.svelte-9c891486.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js"], "styles": [] }, "src/routes/workout/[id].svelte": { "entry": "/./_app/pages/workout/[id].svelte-b0045303.js", "css": ["/./_app/assets/pages/workout/[id].svelte-24ddd8b1.css"], "js": ["/./_app/pages/workout/[id].svelte-b0045303.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-ae2e2b92.js", "css": ["/./_app/assets/pages/__layout.svelte-3ceacedf.css"], "js": ["/./_app/pages/__layout.svelte-ae2e2b92.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-eb914159.js", "css": [], "js": ["/./_app/error.svelte-eb914159.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-90242085.js", "css": ["/./_app/assets/pages/index.svelte-c7508dcd.css"], "js": ["/./_app/pages/index.svelte-90242085.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js", "/./_app/chunks/SettingsModal-010b44ad.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/workoutSettings/[id].svelte": { "entry": "/./_app/pages/workoutSettings/[id].svelte-0b021c11.js", "css": ["/./_app/assets/pages/workoutSettings/[id].svelte-8963ed56.css"], "js": ["/./_app/pages/workoutSettings/[id].svelte-0b021c11.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/SettingsModal-010b44ad.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/settings.svelte": { "entry": "/./_app/pages/settings.svelte-b8792f40.js", "css": [], "js": ["/./_app/pages/settings.svelte-b8792f40.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js"], "styles": [] }, "src/routes/workout/[id].svelte": { "entry": "/./_app/pages/workout/[id].svelte-1faf5c0b.js", "css": ["/./_app/assets/pages/workout/[id].svelte-24ddd8b1.css"], "js": ["/./_app/pages/workout/[id].svelte-1faf5c0b.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -2520,12 +2520,12 @@ function render(request, {
 }
 var css$3 = {
   code: "@tailwind base;@tailwind components;@tailwind utilities;",
-  map: '{"version":3,"file":"__layout.svelte","sources":["__layout.svelte"],"sourcesContent":["<div class=\\"w-full min-h-screen bg-bgBlue text-gray-200 flex justify-center \\">\\n\\t<slot />\\n</div>\\n<svelte:head>\\n\\t<link rel=\\"preconnect\\" href=\\"https://fonts.googleapis.com\\" />\\n\\t<link rel=\\"preconnect\\" href=\\"https://fonts.gstatic.com\\" crossorigin />\\n\\t<link\\n\\t\\thref=\\"https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap\\"\\n\\t\\trel=\\"stylesheet\\"\\n\\t/>\\n\\t<script\\n\\t\\tsrc=\\"https://cdn.jsdelivr.net/combine/npm/pouchdb@7.2.2/dist/pouchdb.min.js,npm/pouchdb@7.2.2/dist/pouchdb.find.min.js\\"><\/script>\\n</svelte:head>\\n\\n<style lang=\\"postcss\\">\\n\\t@tailwind base;\\n\\t@tailwind components;\\n\\t@tailwind utilities;\\n</style>\\n"],"names":[],"mappings":"AAeC,UAAU,IAAI,CAAC,AACf,UAAU,UAAU,CAAC,AACrB,UAAU,SAAS,CAAC"}'
+  map: '{"version":3,"file":"__layout.svelte","sources":["__layout.svelte"],"sourcesContent":["<div class=\\"w-full min-h-screen bg-bgBlue text-gray-200 flex justify-center \\">\\n\\t<slot />\\n</div>\\n<svelte:head>\\n\\t<title>Calitimer</title>\\n\\t<link rel=\\"preconnect\\" href=\\"https://fonts.googleapis.com\\" />\\n\\t<link rel=\\"preconnect\\" href=\\"https://fonts.gstatic.com\\" crossorigin />\\n\\t<link\\n\\t\\thref=\\"https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap\\"\\n\\t\\trel=\\"stylesheet\\"\\n\\t/>\\n\\t<script\\n\\t\\tsrc=\\"https://cdn.jsdelivr.net/combine/npm/pouchdb@7.2.2/dist/pouchdb.min.js,npm/pouchdb@7.2.2/dist/pouchdb.find.min.js\\"><\/script>\\n</svelte:head>\\n\\n<style lang=\\"postcss\\">\\n\\t@tailwind base;\\n\\t@tailwind components;\\n\\t@tailwind utilities;\\n</style>\\n"],"names":[],"mappings":"AAgBC,UAAU,IAAI,CAAC,AACf,UAAU,UAAU,CAAC,AACrB,UAAU,SAAS,CAAC"}'
 };
 var _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
   return `<div class="${"w-full min-h-screen bg-bgBlue text-gray-200 flex justify-center "}">${slots.default ? slots.default({}) : ``}</div>
-${$$result.head += `<link rel="${"preconnect"}" href="${"https://fonts.googleapis.com"}" data-svelte="svelte-1vufuuv"><link rel="${"preconnect"}" href="${"https://fonts.gstatic.com"}" crossorigin data-svelte="svelte-1vufuuv"><link href="${"https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"}" rel="${"stylesheet"}" data-svelte="svelte-1vufuuv"><script src="${"https://cdn.jsdelivr.net/combine/npm/pouchdb@7.2.2/dist/pouchdb.min.js,npm/pouchdb@7.2.2/dist/pouchdb.find.min.js"}" data-svelte="svelte-1vufuuv"><\/script>`, ""}`;
+${$$result.head += `${$$result.title = `<title>Calitimer</title>`, ""}<link rel="${"preconnect"}" href="${"https://fonts.googleapis.com"}" data-svelte="svelte-1bv57yv"><link rel="${"preconnect"}" href="${"https://fonts.gstatic.com"}" crossorigin data-svelte="svelte-1bv57yv"><link href="${"https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"}" rel="${"stylesheet"}" data-svelte="svelte-1bv57yv"><script src="${"https://cdn.jsdelivr.net/combine/npm/pouchdb@7.2.2/dist/pouchdb.min.js,npm/pouchdb@7.2.2/dist/pouchdb.find.min.js"}" data-svelte="svelte-1bv57yv"><\/script>`, ""}`;
 });
 var __layout = /* @__PURE__ */ Object.freeze({
   __proto__: null,
@@ -2592,6 +2592,12 @@ var SettingsBar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 var BallMenu = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   createEventDispatcher();
+  let { firstBallText } = $$props;
+  let { secondBallText = "" } = $$props;
+  if ($$props.firstBallText === void 0 && $$bindings.firstBallText && firstBallText !== void 0)
+    $$bindings.firstBallText(firstBallText);
+  if ($$props.secondBallText === void 0 && $$bindings.secondBallText && secondBallText !== void 0)
+    $$bindings.secondBallText(secondBallText);
   return `<div class="${" fixed bottom-14 right-8 flex flex-col-reverse items-end"}"><div class="${"w-11 h-11 mt-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "}"><img class="${["w-5 transition duration-100 ease-in-out", ""].join(" ").trim()}" alt="${"Add menu"}" src="${" /add.svg"}"></div>
 	${``}</div>`;
 });
@@ -2602,7 +2608,7 @@ var Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 	<div class="${"w-full px-5"}">${each(workouts, (w) => `<a href="${"/workout/" + escape2(w._id)}">${validate_component(Workout, "Workout").$$render($$result, { props: w }, {}, {})}
 			</a>`)}</div>
 	<nav class="${"fixed bottom-0 w-full"}">${validate_component(SettingsBar, "SettingsBar").$$render($$result, { settings: false }, {}, {})}</nav>
-	${validate_component(BallMenu, "BallMenu").$$render($$result, {}, {}, {})}</main>
+	${validate_component(BallMenu, "BallMenu").$$render($$result, { firstBallText: "Create workout" }, {}, {})}</main>
 ${``}`;
 });
 var index = /* @__PURE__ */ Object.freeze({
@@ -2801,7 +2807,7 @@ var U5Bidu5D$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 	<div class="${"w-full flex items-center justify-center flex-col my-4"}"><p class="${"text-xs uppercase text-gray-400"}">duration</p>
 		<p class="${"font-teko text-3xl"}">${escape2(workoutTime)}</p></div>
 	<div class="${"w-full border-b border-red-500 flex justify-center px-4"}"><input type="${"text"}" placeholder="${"Enter description"}" class="${"outline-none bg-transparent text-center w-full"}"></div>
-	<div class="${"w-full flex items-center justify-between px-4"}"><p class="${"text-md my-4"}">Exercises</p>
+	<div class="${"w-full bg-bgBlue flex items-center justify-between px-4 sticky top-0"}"><p class="${"text-md my-4"}">Exercises</p>
 		<div class="${"flex items-center"}"><div class="${" w-20 rounded-full p-0.5 flex items-center " + escape2(" bg-red-900")}"><div class="${" rounded-full px-1.5 " + escape2("bg-red-500")}"><p class="${"text-sm"}">Drag</p></div></div></div></div>
 	<div class="${"w-full"}">${each(exercises, (e) => `<div class="${"outline-none border-none select-none"}">${validate_component(Exercise, "Exercise").$$render($$result, { props: e }, {}, {})}
 			</div>`)}</div>
@@ -2812,7 +2818,10 @@ var U5Bidu5D$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => 
       }
     }, {})}
 	${``}
-	${`${validate_component(BallMenu, "BallMenu").$$render($$result, {}, {}, {})}`}
+	${`${validate_component(BallMenu, "BallMenu").$$render($$result, {
+      firstBallText: "Add exercise",
+      secondBallText: "Add break"
+    }, {}, {})}`}
 	${``}</div>`;
   } while (!$$settled);
   return $$rendered;
@@ -3031,14 +3040,13 @@ var Timer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 			<p class="${"text-3xl xxs:text-4xl font-teko"}">${escape2(timerText)}</p></div></div>
 </div>`;
 });
-var WorkoutPreparation = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+var TopNavbar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   createEventDispatcher();
-  let { time = 5 } = $$props;
-  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
-    $$bindings.time(time);
-  return `<div class="${"w-full h-screen fixed top-0 left-0 bg-bgBluedark opacity-90"}"></div>
-<div class="${"w-full h-screen fixed top-0 left-0 flex flex-col items-center justify-center"}"><p class="${"text-3xl"}">Preparation time</p>
-	<p class="${"font-teko text-7xl"}">${escape2(time)}</p></div>`;
+  let { name = "Workout" } = $$props;
+  if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+    $$bindings.name(name);
+  return `<nav class="${"w-full grid grid-cols-2"}"><div class="${"flex items-center justify-start"}"><img src="${"/arrow.svg"}" alt="${"go back arrow"}" class="${"w-5"}"></div>
+	<div class="${"flex justify-end items-center"}"><p class="${"text-xl "}">${escape2(name)}</p></div></nav>`;
 });
 function load({ page }) {
   const { id } = page.params;
@@ -3100,8 +3108,8 @@ var U5Bidu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.id(id);
   elapsedTimeText = translateTime(workoutTime);
   timeLeftText = translateTime(totalTime - workoutTime);
-  return `${$$result.head += `${$$result.title = `<title>Timer</title>`, ""}`, ""}
-<div class="${"flex flex-col items-center text-gray-200 w-full min-h-screen mx-auto"}"><div class="${"w-full grid grid-cols-3 px-2 py-2 mx-auto"}">${validate_component(StatsText, "StatsText").$$render($$result, {
+  return `<div class="${"flex flex-col items-center text-gray-200 w-full min-h-screen mx-auto"}"><div class="${"my-3 w-full px-3"}">${validate_component(TopNavbar, "TopNavbar").$$render($$result, {}, {}, {})}</div>
+	<div class="${"w-full grid grid-cols-3 px-2 py-2 mx-auto"}">${validate_component(StatsText, "StatsText").$$render($$result, {
     props: {
       statName: "elapsed time",
       statContent: elapsedTimeText,
@@ -3130,11 +3138,12 @@ var U5Bidu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     percentageInner,
     exerciseProps: currentExercise
   }, {}, {})}</div>
+	<div class="${"w-full"}"><div class="${"w-3"}"></div></div>
 
-	<button>reset</button>
 	${validate_component(Playnav, "Playnav").$$render($$result, { timeRunning }, {}, {})}
 	${``}
-	${`${validate_component(WorkoutPreparation, "WorkoutPreparation").$$render($$result, {}, {}, {})}`}</div>`;
+	${``}
+	${``}</div>`;
 });
 var _id_ = /* @__PURE__ */ Object.freeze({
   __proto__: null,

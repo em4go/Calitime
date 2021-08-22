@@ -19,7 +19,7 @@
 	}; */
 	export let props: any;
 	export let workoutId;
-	let actualColor = props.color || 0;
+	let actualColor = props.color || Math.floor(Math.random() * 8);
 	$: exerColor = colorsArray[actualColor];
 	function changeColor(): void {
 		actualColor++;

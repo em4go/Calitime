@@ -191,6 +191,17 @@
 		currentExercise = exercise;
 		showModalSettings = true;
 	}
+	let defaultBreak = {
+		color: 0,
+		isRest: true,
+		name: 'Descanso',
+		repsMode: false,
+		time: 30
+	};
+	function handleAddBreak() {
+		exerciseModifiying = true;
+		currentExercise = defaultBreak;
+	}
 </script>
 
 <div class="flex flex-col text-gray-200 w-full min-h-screen mx-auto items-center">
@@ -228,7 +239,7 @@
 			class="outline-none bg-transparent text-center w-full"
 		/>
 	</div>
-	<div class="w-full flex items-center justify-between px-4">
+	<div class="w-full bg-bgBlue flex items-center justify-between px-4 sticky top-0">
 		<p class="text-md my-4">Exercises</p>
 		<div class="flex items-center">
 			<div
@@ -274,9 +285,12 @@
 	{/if}
 	{#if !exerciseModifiying}
 		<BallMenu
-			on:createExercise={() => {
+			on:createFirstBall={() => {
 				exerciseModifiying = true;
 			}}
+			on:secondBallClick={handleAddBreak}
+			firstBallText={'Add exercise'}
+			secondBallText={'Add break'}
 		/>
 	{/if}
 	{#if showModalSettings}

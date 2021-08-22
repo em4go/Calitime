@@ -9,7 +9,23 @@
 	let workouts = [];
 	onMount(async () => {
 		await updateWorkouts();
+		if (localStorage.getItem('hasSettings') == null) {
+			await updateSettings();
+			localStorage.setItem('hasSettings', 'true');
+		}
 	});
+	async function updateSettings() {
+		let db = new PouchDB('settings');
+		const allDocs = await db.allDocs({ include_docs: true });
+		if (allDocs.rows[0] === undefined) {
+			await db.put({
+				_id: 'ajustes',
+				darkTheme: true,
+				voicePitch: 1,
+				voiceRate: 1
+			});
+		}
+	}
 
 	async function updateWorkouts() {
 		let db = new PouchDB('workouts');
@@ -66,7 +82,7 @@
 	<nav class="fixed bottom-0 w-full">
 		<SettingsBar settings={false} />
 	</nav>
-	<BallMenu on:createExercise={createWorkout} />
+	<BallMenu on:createFirstBall={createWorkout} firstBallText={'Create workout'} />
 </main>
 {#if showSettings}
 	<SettingsModal

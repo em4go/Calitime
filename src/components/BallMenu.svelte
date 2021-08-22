@@ -3,13 +3,20 @@
 	const dispatch = createEventDispatcher();
 	let isOpen = false;
 
+	export let firstBallText;
+	export let secondBallText = '';
+
 	function handleOpen() {
 		isOpen = !isOpen;
 	}
 
-	function handleExercise() {
+	function handleFirstBall() {
 		isOpen = false;
-		dispatch('createExercise');
+		dispatch('createFirstBall');
+	}
+	function handleSecondBall() {
+		isOpen = false;
+		dispatch('secondBallClick');
 	}
 </script>
 
@@ -26,13 +33,23 @@
 		/>
 	</div>
 	{#if isOpen}
-		<div class="flex items-center justify-center" on:click={handleExercise}>
-			<p class="text-sm bg-red-500 rounded-full px-2">Add exercise</p>
+		<div class="flex items-center justify-center mt-3" on:click={handleFirstBall}>
+			<p class="text-sm bg-red-500 rounded-full px-2">{firstBallText}</p>
 			<div
 				class="w-11 h-11 ml-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "
 			>
-				<img class="w-10" alt="Add menu" src=" /favicon.svg" />
+				<img class="w-10" alt="Add menu" src="/favicon.svg" />
 			</div>
 		</div>
+		{#if secondBallText}
+			<div class="flex items-center justify-center" on:click={handleSecondBall}>
+				<p class="text-sm bg-red-500 rounded-full px-2">{secondBallText}</p>
+				<div
+					class="w-11 h-11 ml-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "
+				>
+					<img class="w-8" alt="Add menu" src="/water-bottle.svg" />
+				</div>
+			</div>
+		{/if}
 	{/if}
 </div>
