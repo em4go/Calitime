@@ -2411,9 +2411,9 @@ function init(settings2 = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-bbe33e14.js",
+      file: "/./_app/start-27ac18fc.js",
       css: ["/./_app/assets/start-8077b9bf.css"],
-      js: ["/./_app/start-bbe33e14.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/singletons-12a22614.js"]
+      js: ["/./_app/start-27ac18fc.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/singletons-12a22614.js"]
     },
     fetched: void 0,
     floc: false,
@@ -2505,7 +2505,7 @@ var module_lookup = {
     return _id_;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-ae2e2b92.js", "css": ["/./_app/assets/pages/__layout.svelte-3ceacedf.css"], "js": ["/./_app/pages/__layout.svelte-ae2e2b92.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-eb914159.js", "css": [], "js": ["/./_app/error.svelte-eb914159.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-90242085.js", "css": ["/./_app/assets/pages/index.svelte-c7508dcd.css"], "js": ["/./_app/pages/index.svelte-90242085.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js", "/./_app/chunks/SettingsModal-010b44ad.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/workoutSettings/[id].svelte": { "entry": "/./_app/pages/workoutSettings/[id].svelte-0b021c11.js", "css": ["/./_app/assets/pages/workoutSettings/[id].svelte-8963ed56.css"], "js": ["/./_app/pages/workoutSettings/[id].svelte-0b021c11.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/SettingsModal-010b44ad.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/settings.svelte": { "entry": "/./_app/pages/settings.svelte-b8792f40.js", "css": [], "js": ["/./_app/pages/settings.svelte-b8792f40.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js"], "styles": [] }, "src/routes/workout/[id].svelte": { "entry": "/./_app/pages/workout/[id].svelte-1faf5c0b.js", "css": ["/./_app/assets/pages/workout/[id].svelte-24ddd8b1.css"], "js": ["/./_app/pages/workout/[id].svelte-1faf5c0b.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-ae2e2b92.js", "css": ["/./_app/assets/pages/__layout.svelte-3ceacedf.css"], "js": ["/./_app/pages/__layout.svelte-ae2e2b92.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "/./_app/error.svelte-eb914159.js", "css": [], "js": ["/./_app/error.svelte-eb914159.js", "/./_app/chunks/vendor-f02024c2.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-90242085.js", "css": ["/./_app/assets/pages/index.svelte-c7508dcd.css"], "js": ["/./_app/pages/index.svelte-90242085.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js", "/./_app/chunks/SettingsModal-010b44ad.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/workoutSettings/[id].svelte": { "entry": "/./_app/pages/workoutSettings/[id].svelte-0b021c11.js", "css": ["/./_app/assets/pages/workoutSettings/[id].svelte-8963ed56.css"], "js": ["/./_app/pages/workoutSettings/[id].svelte-0b021c11.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/SettingsModal-010b44ad.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] }, "src/routes/settings.svelte": { "entry": "/./_app/pages/settings.svelte-b8792f40.js", "css": [], "js": ["/./_app/pages/settings.svelte-b8792f40.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/SettingsBar-7a7df0d2.js"], "styles": [] }, "src/routes/workout/[id].svelte": { "entry": "/./_app/pages/workout/[id].svelte-818e8fde.js", "css": ["/./_app/assets/pages/workout/[id].svelte-24ddd8b1.css"], "js": ["/./_app/pages/workout/[id].svelte-818e8fde.js", "/./_app/chunks/vendor-f02024c2.js", "/./_app/chunks/colors-a6cc3121.js", "/./_app/chunks/navigation-2ffed81e.js", "/./_app/chunks/singletons-12a22614.js"], "styles": [] } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -3138,8 +3138,6 @@ var U5Bidu5D = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     percentageInner,
     exerciseProps: currentExercise
   }, {}, {})}</div>
-	<div class="${"w-full"}"><div class="${"w-3"}"></div></div>
-
 	${validate_component(Playnav, "Playnav").$$render($$result, { timeRunning }, {}, {})}
 	${``}
 	${``}
