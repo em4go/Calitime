@@ -46,9 +46,9 @@
 		</div>
 		<p class="text-md">{props.name}</p>
 	</div>
-	<p class="text-gray-300">{time}</p>
+	<p class="text-gray-300">{props.repsMode ? `x${props.reps}` : time}</p>
 	<div class="w-6 ml-4 opacity-75">
-		<img src=" /vertical-move-white.svg" alt="" />
+		<img src="/vertical-move-white.svg" alt="draggable icon" />
 	</div>
 </div>
 

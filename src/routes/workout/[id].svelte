@@ -66,7 +66,7 @@
 		exercises = allDocs.docs;
 	}
 
-	let preparationTrue = false;
+	let preparationTrue = true;
 	let totalTime = 10;
 	let actualLap = 1;
 	let totalLaps;
@@ -164,10 +164,12 @@
 	function updateExerciseCountdown() {
 		exerciseTime++;
 		let timeLeft = currentExercise.time - exerciseTime;
-		if (timeLeft === 1) speak(speech, '1');
-		if (timeLeft === 2) speak(speech, '2');
-		if (timeLeft === 3) speak(speech, '3');
-		if (timeLeft === 6) speak(speech, `Siguiente ejercicio ${nextExerciseText}`);
+		if (!currentExercise.repsMode) {
+			if (timeLeft === 1) speak(speech, '1');
+			if (timeLeft === 2) speak(speech, '2');
+			if (timeLeft === 3) speak(speech, '3');
+			if (timeLeft === 6) speak(speech, `Siguiente ejercicio ${nextExerciseText}`);
+		}
 
 		if (exerciseTime >= currentExercise.time) {
 			if (!currentExercise.repsMode) handleNextExercise();
