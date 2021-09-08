@@ -38,7 +38,7 @@
 			<div
 				class="w-11 h-11 ml-3 bg-red-500 flex items-center justify-center rounded-full drop-shadow-2xl "
 			>
-				<img class="w-10" alt="Add menu" src="/favicon.svg" />
+				<img class="w-8" alt="Add menu" src="/add-exercise.svg" />
 			</div>
 		</div>
 		{#if secondBallText}
