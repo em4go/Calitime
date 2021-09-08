@@ -183,6 +183,9 @@
 	function isLastExercise() {
 		return currentIndex === exercises.length;
 	}
+	function isLast() {
+		return isLastExercise && actualLap === totalLaps;
+	}
 	function handleNextExercise() {
 		stopTimer();
 		totalTime -= currentExercise.time - exerciseTime;
@@ -193,7 +196,9 @@
 			actualLap++;
 		}
 		updateStats();
-		speak(speech, currentExercise.name);
+		if (!(actualLap > totalLaps)) {
+			speak(speech, currentExercise.name);
+		}
 		startTimer();
 	}
 	function isFirstExercise() {
@@ -217,11 +222,6 @@
 			exerciseTime = 0;
 			updateStats();
 		}
-	}
-	function handleWorkoutReset() {
-		workoutTime = totalTime;
-		timeRunning = false;
-		clearInterval(workoutTimer);
 	}
 	function calculateTime(time: number): string {
 		if (time < 10) {
