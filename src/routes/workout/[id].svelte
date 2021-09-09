@@ -30,8 +30,10 @@
 		await loadSettings();
 		updateStats();
 		speech = createSpeech(settings.voiceRate, settings.voicePitch);
-		console.log(speech);
-		speak(speech, 'Prepárate');
+		preparationTime = settings.preparation;
+		if (!preparationTime) {
+			handleTimer();
+		}
 	});
 	async function loadWorkout(id) {
 		let db = new PouchDB('workouts');
@@ -66,10 +68,11 @@
 		exercises = allDocs.docs;
 	}
 
-	let preparationTrue = true;
 	let totalTime = 10;
 	let actualLap = 1;
 	let totalLaps;
+
+	let preparationTime;
 
 	let currentIndex = 0;
 	let currentExercise;
@@ -186,6 +189,7 @@
 	function isLast() {
 		return isLastExercise && actualLap === totalLaps;
 	}
+	let onNextButton = false;
 	function handleNextExercise() {
 		stopTimer();
 		totalTime -= currentExercise.time - exerciseTime;
@@ -196,9 +200,10 @@
 			actualLap++;
 		}
 		updateStats();
-		if (!(actualLap > totalLaps)) {
+		if (!(actualLap > totalLaps || onNextButton)) {
 			speak(speech, currentExercise.name);
 		}
+		onNextButton = false;
 		startTimer();
 	}
 	function isFirstExercise() {
@@ -236,7 +241,7 @@
 		return `${minutes}:${seconds}`;
 	}
 	function handlePreparationEnd() {
-		preparationTrue = false;
+		preparationTime = false;
 		speak(speech, 'Empecemos');
 		handleTimer();
 	}
@@ -307,14 +312,17 @@
 	</div>
 	<Playnav
 		on:playPause={handleStartStop}
-		on:next={handleNextExercise}
+		on:next={() => {
+			onNextButton = true;
+			handleNextExercise();
+		}}
 		on:previous={handlePreviousExercise}
 		{timeRunning}
 	/>
 	{#if showFinished}
 		<WorkoutFinished duration={elapsedTimeText} />
 	{/if}
-	{#if preparationTrue}
+	{#if preparationTime}
 		<WorkoutPreparation on:preparationEnd={handlePreparationEnd} />
 	{/if}
 	{#if showExitModal}

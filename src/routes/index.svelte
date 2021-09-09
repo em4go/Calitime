@@ -22,7 +22,8 @@
 				_id: 'ajustes',
 				darkTheme: true,
 				voicePitch: 1,
-				voiceRate: 1
+				voiceRate: 1,
+				preparation: true
 			});
 		}
 	}
@@ -72,7 +73,7 @@
 			<img class="w-5" src=" /sort-down.svg" alt="Sort by icon" />
 		</div> -->
 	</div>
-	<div class="w-full px-5">
+	<div class="w-full px-5 mb-14">
 		{#each workouts as w}
 			<a href="/workout/{w._id}">
 				<Workout props={w} on:longPress={() => handleEditWorkout(w)} />
